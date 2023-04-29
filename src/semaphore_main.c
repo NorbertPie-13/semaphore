@@ -36,7 +36,7 @@ void * thread(void * arg)
     sem_wait(&semaphore);
     printf("This used the semaphore.\n");
 
-    sleep(2);
+    sleep(4);
 
     printf("Exiting semaphore.\n");
     sem_post(&semaphore);
