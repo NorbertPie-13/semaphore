@@ -7,14 +7,14 @@
 #include <semaphore.h>
 #include <unistd.h>
 
+#define err(...) fprintf(stderr, __VA_ARGS__)
+
 typedef enum
 {
     ERROR = -1,
     PASS,
     FAIL
 } return_codes;
-
-#define err(...) fprintf(stderr, __VA_ARGS__)
 
 void * thread(void * arg);
 
